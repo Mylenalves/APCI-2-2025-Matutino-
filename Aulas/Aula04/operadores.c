@@ -1,5 +1,5 @@
 #include <stdio.h> // inclusao de bibliotecas
-#include <math.h>
+#include <math.h> // biblioteca de matematica
 #include <locale.h>
 #include <stdlib.h>
 
@@ -55,6 +55,62 @@ int main() {
     printf("O numero %i eh maior ou igual a %i? %i\n", numero1, numero2, maior_ou_igual);
     printf("O numero %i eh igual a %i? %i\n", numero1, numero2, igual);
     printf("O numero %i eh diferente a %i? %i\n", numero1, numero2, diferente);
+
+    //operadores lógicos
+    float media = 5.0f;
+    float falta = 0.25f;
+    int operador_E = media >= 5.0f && falta <= 0.25f;
+    
+    printf("Passei? %i\n", operador_E);
+    int operador_OU = media >= 5.0f || falta <= 0.25f;
+    printf("Passei? %i\n", operador_OU);
+    int operador_NAO = ! (media >= 5.0f);
+    printf("Passei? %i\n", operador_NAO);
+
+    // 0 < numero < 10 na matematica 
+    // 0 < numero && numero < 10 na programacao 
+    // Falso E Qualquer coisa é Falso 
+    // Verdadeiro OU Qualquer coisa é Verdadeiro
+
+    // funções da Matematica
+    // Raiz quadrada, Potencia, Logaritmo, Exponecial,
+    // Tangente, Seno, Coseno
+
+    // #include <math.h> biblioteca de matematica
+
+    const double PI = 3.1415;
+    double raiz_quadrada_de_2 = sqrt(2);
+    double potencia_de_3 = pow(2,3);
+    double logaritmo_base10 = log10(2);
+    double exponencial = exp(2);
+    double coseno_90 = cos(90 * (PI / 180)); //converter p/ radiano
+
+    printf("A raiz quadrada de 2 = %.2f\n", raiz_quadrada_de_2);
+    printf("A potencia de 2 elevado a 3 = %.0f\n", potencia_de_3);
+    printf("A logaritmo de 2 na base 10 = %.2f\n", logaritmo_base10);
+    printf("A exponencial de 2 = %.2f\n", exponencial);
+    printf("o cossen de 90 = %.2f\n", coseno_90);
+
+    // Precedencia
+    // 0. () 
+    // 1. * / %
+    // 2. + - 
+
+    int expressao1 = 2- 5 / 3 * 4 + 1;
+     // 5 / 3 = 1, 2 - 1 * 4 + 1
+     // 1 * 4 = 4, 2 - 4 + 1 
+     // 2 - 4 = -2 - 4 + 1 
+     // 2 - 4 = -2 + 1
+     // -1 
+
+     int expressao2 = 2- 5 / (3 * 4) + 1;
+     // (3 *4) =12, 2- 5 / 12 + 1
+     // 5 / 12 = 0, 2 -0 + 1
+     // 2 - 0 = 2, 2 + 1
+     // 2 + 1 = 3
+
+     printf("A expressao 2 - 5 / 3 * 4 + 1 = %i\n", expressao1);
+     printf("A expressao 2 - 5 / (3 * 4) + 1 = %i\n", expressao2);
 
     system("PAUSE");
     return 0;

@@ -16,6 +16,17 @@ int main() {
 
     printf("\nVocê digitou: %.2f\n", preco);
     
+
+    double fracao;
+    setlocale(LC_ALL,"");
+
+    printf("\nDigite uma fração:\n");
+    scanf("%lf",&fracao);
+    getchar(); //ler uma tecla limpa \n
+
+    printf("\nVocê digitou: %.10f\n", fracao);
+
+
     system("PAUSE");
     return 0;
 

@@ -19,18 +19,20 @@ int main() {
         printf("Você digitou o número: %d\n", numero);
     }
     if (numero_eh_divisivel_por_2) {
-        printf("O numero %i eh par!\n, numero");
+        printf("O numero %i eh par!\n", numero);
     } else {
         printf("O numero %i eh impar\n", numero);
     }
     if (numero < 0) {
-        printf("O numero %i eh negativo!\n , numero"); 
-    }
-    {
-        /* code */
+        printf("O numero %i eh negativo!\n", numero); 
+    } else if (numero == 0) {    
+        printf("o numero %i eh zero!\n", numero);
+    } else {
+        printf("o numero %i eh positivo!\n", numero);
+
     }
     
-
+    
     return 0;
 
 }

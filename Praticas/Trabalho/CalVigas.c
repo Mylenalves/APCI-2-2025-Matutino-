@@ -24,16 +24,16 @@ int main()
         {
         case 1:
         {
-            float q, L, RA, RB, Mmax;
+            float P, L, RA, RB, Mmax;
 
-            printf("\n=== CARGA DISTRIBUIDA ===\n");
-            printf("Informe a carga distribuida q (kN/m): ");
-            scanf("%f", &q);
+            printf("\n=== CARGA CONCENTRADA ===\n");
+            printf("Informe a carga P (kN): ");
+            scanf("%f", &P);
             printf("Informe o comprimento da viga L (m): ");
             scanf("%f", &L);
 
-            RA = RB = (q * L) / 2.0;
-            Mmax = (q * L * L) / 8.0;
+            RA = RB = P / 2.0;
+            Mmax = (P * L) / 4.0;
 
             printf("\nReacao em A = %.2f kN", RA);
             printf("\nReacao em B = %.2f kN", RB);

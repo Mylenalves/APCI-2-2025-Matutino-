@@ -11,7 +11,7 @@ int main() {
     //void - sem tipo 
 
     // 2) variaveis e contantes
-    int idade = 16; 
+    int idade = 22; 
     char tecla = 's';
     float nota = 8.5f;
     const double PI = 3.1415169226;
